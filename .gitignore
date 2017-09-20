@@ -1,0 +1,16 @@
+# Ignore everything
+*
+
+# Except for
+!.gitignore
+
+!public_html/
+
+public_html/*
+!public_html/img/
+!public_html/img/*
+!public_html/res/
+!public_html/res/*
+!public_html/css
+!public_html/css/*
+!public_html/index.html
