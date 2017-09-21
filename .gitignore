@@ -9,6 +9,7 @@
 public_html/*
 !public_html/img/
 !public_html/img/*
+public_html/img/.DS_Store
 !public_html/res/
 !public_html/res/*
 !public_html/css
