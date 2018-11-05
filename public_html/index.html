@@ -1,380 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CS+LS PhD Program</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Northwestern University's Joint PhD Program in Computer Science and Learning Sciences">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/footer.css" type="text/css">
-  <style>
-	ul.profiles {margin:0 auto; padding:0; list-style:none;}
-	ul.profiles a {display:block; border:none; outline:none; text-decoration:none;}
-	ul.profiles li {margin:0 0 5px 0; padding:0; width:300px; display:block; float:left; border:none; outline:none; overflow:hidden;}
-	ul.profiles li img {margin:0 auto; padding:10px 10px 0 10px; width:100%; height:auto; opacity:0.9;}
-	ul.profiles li:hover img {opacity:1.0; padding:0 10px 10px 10px;}
-	ul.profiles li span {margin-top:-20px; padding:10px; position:relative; border-top:1px solid #ccc; width:100%; display:block; background-color:#fff;}
-	ul.profiles h3 {margin:0; padding:0; color:#000; opacity:0.6; font-size:20px; line-height:18px; text-shadow:0px 0px 1px #eee; font-weight:normal; -webkit-transition-delay:0s; -webkit-transition-duration: 0.1s;}
-	ul.profiles li:hover h3 {opacity:1.0;}
-	ul.profiles h4 {margin:5px 0 0 0; padding:0px 0 0 0; color:#000; opacity:0.4; font-size:16px;}
+   <title>CS+LS PhD Program</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="Northwestern University's Joint PhD Program in Computer Science and Learning Sciences">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/footer.css" type="text/css">
+   <style>
+   ul.profiles {margin:0 auto; padding:0; list-style:none;}
+   ul.profiles a {display:block; border:none; outline:none; text-decoration:none;}
+   ul.profiles li {margin:0 0 5px 0; padding:0; width:300px; display:block; float:left; border:none; outline:none; overflow:hidden;}
+   ul.profiles li img {margin:0 auto; padding:10px 10px 0 10px; width:100%; height:auto; opacity:0.9;}
+   ul.profiles li:hover img {opacity:1.0; padding:0 10px 10px 10px;}
+   ul.profiles li span {margin-top:-20px; padding:10px; position:relative; border-top:1px solid #ccc; width:100%; display:block; background-color:#fff;}
+   ul.profiles h3 {margin:0; padding:0; color:#000; opacity:0.6; font-size:20px; line-height:18px; text-shadow:0px 0px 1px #eee; font-weight:normal; -webkit-transition-delay:0s; -webkit-transition-duration: 0.1s;}
+   ul.profiles li:hover h3 {opacity:1.0;}
+   ul.profiles h4 {margin:5px 0 0 0; padding:0px 0 0 0; color:#000; opacity:0.4; font-size:16px;}
 
-  h6 {font-size: 18px;}
+   h6 {font-size: 18px;}
 </style>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
-      $(".nav-link").on("click", function(){
-         $("li.nav-item.active").removeClass("active");
-         $(this).parent().addClass("active");
-      });
+   $(".nav-link").on("click", function(){
+      $("li.nav-item.active").removeClass("active");
+      $(this).parent().addClass("active");
+   });
 
-      // This will capture hash changes while on the page
-      window.addEventListener("hashchange", offsetAnchor);
+   // This will capture hash changes while on the page
+   window.addEventListener("hashchange", offsetAnchor);
 
-      // This is here so that when you enter the page with a hash,
-      // it can provide the offset in that case too. Having a timeout
-      // seems necessary to allow the browser to jump to the anchor first.
-      window.setTimeout(offsetAnchor, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
+   // This is here so that when you enter the page with a hash,
+   // it can provide the offset in that case too. Having a timeout
+   // seems necessary to allow the browser to jump to the anchor first.
+   window.setTimeout(offsetAnchor, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
 
 });
 
 // The function actually applying the offset
 function offsetAnchor() {
-    if(location.hash.length !== 0) {
-        window.scrollTo(window.scrollX, window.scrollY - 60);
-    }
+   if(location.hash.length !== 0) {
+      window.scrollTo(window.scrollX, window.scrollY - 60);
+   }
 }
 </script>
 </head>
 
 <body>
-  <header>
-    <nav id="home" class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#4E2A84">
-      <ul class="navbar-nav">
-         <li class="nav-item">
-          <a class="nav-link" style="pointer-events: none; cursor: default;" href="#home">CS + LS</a>
-         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#overview">Overview</a>
-        </li>
+   <header>
+      <nav id="home" class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#4E2A84">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" style="pointer-events: none; cursor: default;" href="#home">CS + LS</a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#overview">Overview</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#people">People</a>
-        </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#people">People</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#events">Events</a>
-        </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#events">Events</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#admissions">Admissions</a>
-        </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#admissions">Admissions</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#admissions">Contact</a>
-        </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#admissions">Contact</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="res/handbook.pdf">Student Handbook</a>
-        </li>
-
-
-      </ul>
-    </nav>
-    <div class="container col-md-10" style="margin-top: 100px">
-      <h2 style="width: 100%;">Joint PhD Program in Computer Science and Learning Sciences</h2>
-      <h5>Northwestern University</h5>
-      <!--<p style="font-style: italic; color: #999;">Updated: August 23, 2017</p>-->
-      <img src="img/banner.jpg" style="width: 100%;">
-      <p style="margin-top: 20px;">
-        <a class="btn btn-primary" href="#admissions" role="button">Apply Now!</a>
-      </p>
-    </div>
-  </header>
-
-  <main>
+            <li class="nav-item">
+               <a class="nav-link" href="res/handbook.pdf">Student Handbook</a>
+            </li>
 
 
-  <!-- OVERVIEW -->
-  <section id="overview" class="container col-md-10" style="margin-top: 50px;">
-    <h3>Overview</h3>
-    <p>
-      The Joint PhD Program in Computer Science and Learning Sciences builds on enduring and growing connections between research on learning and computation. Rapid technological advances continue to create new and exciting ways to both understand and support learning in all settings and in all stages of life. This program is intended for students with an interest in both fields who would otherwise be forced to choose one area or the other.
-    </p>
-
-    <h5>Areas of Interest</h5>
-    <p>
-      The possible areas of study are broad and draw from the diverse expertise of affiliated faculty. However, all research must have clear relevance to both Computer Science and Learning Sciences. Example areas of interest include educational data mining; computational modeling as a means to understand complex scientific phenomena; adaptive technology for learning; equity issues in computing; intelligent tutoring systems; and interaction design to support learning.
-    </p>
-    <div class="row">
-      <div class="col-md-5">
-        <ul style="list-style-type: none;">
-          <li>Interaction Design</li>
-          <li>Computational modeling and simulations</li>
-          <li>Artificial Intelligence</li>
-          <li>Programming language design</li>
-          <li>Machine Learning</li>
-          <li>Crowd Sourcing</li>
-          <li>Social Computing</li>
-          <li>Cognitive Modeling</li>
-        </ul>
-      </div>
-      <div class="col-md-5">
-        <ul style="list-style-type: none;">
-          <li>Learning Analytics</li>
-          <li>Game Design</li>
-          <li>Educational Data Mining</li>
-          <li>Computer Science Education</li>
-          <li>Visualization</li>
-          <li>Learning at Scale</li>
-          <li>Tangible and Ubiquitous Computing</li>
-          <li>Robotics</li>
-        </ul>
-      </div>
-    </div>
-
-      <p>
-      Learn more about our program by registering for an upcoming
-      <a href="https://www.sesp.northwestern.edu/learning-sciences/virtual-information-session.html" target="_blank">virtual information session</a>.
-      </p>
-    </section>
-
-
-    <!-- PEOPLE -->
-    <section id="people" class="container col-md-10" style="margin-top: 50px;">
-
-      <h3>People</h3>
-      <h5>Core Faculty</h5>
-        <ul class="profiles">
-          <li><a href="http://ccl.northwestern.edu/Uri.shtml"><img src="img/wilensky.jpg">
-      		<span><h3>Uri Wilensky</h3><h4>Co-Director</h4></span>
-      	</a></li>
-              <li><a href="http://tidal.northwestern.edu/people/mikehorn/"><img src="img/horn.jpg">
-      		<span><h3>Michael Horn</h3><h4>Co-Director</h4></span>
-      	</a></li>
-              <li><a href="http://www.sesp.northwestern.edu/profile/?p=17827"><img src="img/colyvas.jpg">
-      		<span><h3>Jeannette Colyvas</h3><h4>Steering Committee</h4></span>
-      	</a></li>
-              <li><a href="http://www.cs.northwestern.edu/~riesbeck/"><img src="img/riesbeck.jpg">
-      		<span><h3>Chris Riesbeck</h3><h4>Steering Committee</h4></span>
-      	</a></li>
-              <li><a href="http://www.cs.northwestern.edu/~forbus/"><img src="img/forbus.jpg">
-      		<span><h3>Ken Forbus</h3><h4>&nbsp;</h4></span>
-      	</a></li>
-              <li><a href="http://www.eleanorourke.com/"><img src="img/orourke.png">
-      		<span><h3>Eleanor O’Rourke</h3><h4>&nbsp;</h4></span>
-      	</a></li>
-              <li><a href="http://www.sesp.northwestern.edu/profile/?p=82"><img src="img/sherin.jpg">
-      		<span><h3>Bruce Sherin</h3><h4>&nbsp;</h4></span>
-      	</a></li>
-              <li><a href="http://marceloworsley.com/"><img src="img/worsley.jpg">
-      		<span><h3>Marcelo Worsley</h3><h4>&nbsp;</h4></span>
-      	</a></li>
-            </ul>
-
-        <br style="clear:both">
-           <h5>Affiliated Faculty</h5>
-           <ul class = "profiles">
-              <li><a href="http://infolab.northwestern.edu/team/larry-birnbaum.html"><img src="img/birnbaum.jpg">
-      		<span><h3>Larry Birnbaum</h3><h4>&nbsp;</h4></span>
-      	</a></li>
-              <li><a href="http://matteasterday.com/"><img src="img/easterday.jpg">
-      		<span><h3>Matt Easterday</h3><h4>&nbsp;</h4></span>
-      	</a></li>
-        <li><a href="https://egerber.mech.northwestern.edu"><img src="img/gerber.jpg">
-           <span><h3>Liz Gerber</h3><h4>&nbsp;</h4></span>
-        </a></li>
-              <li><a href="http://dgergle.soc.northwestern.edu"><img src="img/gergle.jpg">
-           <span><h3>Darren Gergle</h3><h4>&nbsp;</h4></span>
-        </a></li>
-              <li><a href="http://www.sesp.northwestern.edu/profile/?p=23132&/PaulaHooper/"><img src="img/hooper.jpg">
-           <span><h3>Paula Hooper</h3><h4>&nbsp;</h4></span>
-        </a></li>
-              <li><a href="http://www.sesp.northwestern.edu/profile/?p=1049&/NicholePinkard/"><img src="img/pinkard.jpg">
-           <span><h3>Nichole Pinkard</h3><h4>&nbsp;</h4></span>
-        </a></li>
-        <li><a href="http://ampiper.soc.northwestern.edu"><img src="img/piper.jpg">
-        <span><h3>Anne Marie Piper</h3><h4>&nbsp;</h4></span>
-        </a></li>
-        <li><a href="http://users.eecs.northwestern.edu/~hq/"><img src="img/zhang.jpg">
-        <span><h3>Haoqi Zhang</h3><h4>&nbsp;</h4></span>
-        </a></li>
          </ul>
-      <br style="clear:both">
-    	<br style="clear:both">
-          <h5>Students</h5>
-          <ul class = "profiles">
+      </nav>
+      <div class="container col-md-10" style="margin-top: 100px">
+         <h2 style="width: 100%;">Joint PhD Program in Computer Science and Learning Sciences</h2>
+         <h5>Northwestern University</h5>
+         <!--<p style="font-style: italic; color: #999;">Updated: August 23, 2017</p>-->
+         <img src="img/banner.jpg" style="width: 100%;">
+         <p style="margin-top: 20px;">
+            <a class="btn btn-primary" href="#admissions" role="button">Apply Now!</a>
+         </p>
+      </div>
+   </header>
+
+   <main>
+
+
+      <!-- OVERVIEW -->
+      <section id="overview" class="container col-md-10" style="margin-top: 50px;">
+         <h3>Overview</h3>
+         <p>
+            The Joint PhD Program in Computer Science and Learning Sciences builds on enduring and growing connections between research on learning and computation. Rapid technological advances continue to create new and exciting ways to both understand and support learning in all settings and in all stages of life. This program is intended for students with an interest in both fields who would otherwise be forced to choose one area or the other.
+         </p>
+
+         <h5>Areas of Interest</h5>
+         <p>
+            The possible areas of study are broad and draw from the diverse expertise of affiliated faculty. However, all research must have clear relevance to both Computer Science and Learning Sciences. Example areas of interest include educational data mining; computational modeling as a means to understand complex scientific phenomena; adaptive technology for learning; equity issues in computing; intelligent tutoring systems; and interaction design to support learning.
+         </p>
+         <div class="row">
+            <div class="col-md-5">
+               <ul style="list-style-type: none;">
+                  <li>Interaction Design</li>
+                  <li>Computational modeling and simulations</li>
+                  <li>Artificial Intelligence</li>
+                  <li>Programming language design</li>
+                  <li>Machine Learning</li>
+                  <li>Crowd Sourcing</li>
+                  <li>Social Computing</li>
+                  <li>Cognitive Modeling</li>
+               </ul>
+            </div>
+            <div class="col-md-5">
+               <ul style="list-style-type: none;">
+                  <li>Learning Analytics</li>
+                  <li>Game Design</li>
+                  <li>Educational Data Mining</li>
+                  <li>Computer Science Education</li>
+                  <li>Visualization</li>
+                  <li>Learning at Scale</li>
+                  <li>Tangible and Ubiquitous Computing</li>
+                  <li>Robotics</li>
+               </ul>
+            </div>
+         </div>
+
+         <p>
+            Learn more about our program by registering for an upcoming
+            <a href="https://www.sesp.northwestern.edu/learning-sciences/virtual-information-session.html" target="_blank">virtual information session</a>.
+         </p>
+      </section>
+
+
+      <!-- PEOPLE -->
+      <section id="people" class="container col-md-10" style="margin-top: 50px;">
+
+         <h3>People</h3>
+         <h5>Core Faculty</h5>
+         <ul class="profiles">
+            <li><a href="http://ccl.northwestern.edu/Uri.shtml"><img src="img/wilensky.jpg">
+               <span><h3>Uri Wilensky</h3><h4>Co-Director</h4></span>
+            </a></li>
+            <li><a href="http://tidal.northwestern.edu/people/mikehorn/"><img src="img/horn.jpg">
+               <span><h3>Michael Horn</h3><h4>Co-Director</h4></span>
+            </a></li>
+            <li><a href="http://www.sesp.northwestern.edu/profile/?p=17827"><img src="img/colyvas.jpg">
+               <span><h3>Jeannette Colyvas</h3><h4>Steering Committee</h4></span>
+            </a></li>
+            <li><a href="http://www.cs.northwestern.edu/~riesbeck/"><img src="img/riesbeck.jpg">
+               <span><h3>Chris Riesbeck</h3><h4>Steering Committee</h4></span>
+            </a></li>
+            <li><a href="http://www.cs.northwestern.edu/~forbus/"><img src="img/forbus.jpg">
+               <span><h3>Ken Forbus</h3><h4>&nbsp;</h4></span>
+            </a></li>
+            <li><a href="http://www.eleanorourke.com/"><img src="img/orourke.png">
+               <span><h3>Eleanor O’Rourke</h3><h4>&nbsp;</h4></span>
+            </a></li>
+            <li><a href="http://www.sesp.northwestern.edu/profile/?p=82"><img src="img/sherin.jpg">
+               <span><h3>Bruce Sherin</h3><h4>&nbsp;</h4></span>
+            </a></li>
+            <li><a href="http://marceloworsley.com/"><img src="img/worsley.jpg">
+               <span><h3>Marcelo Worsley</h3><h4>&nbsp;</h4></span>
+            </a></li>
+         </ul>
+
+         <br style="clear:both">
+         <h5>Affiliated Faculty</h5>
+         <ul class = "profiles">
+            <li><a href="http://infolab.northwestern.edu/team/larry-birnbaum.html"><img src="img/birnbaum.jpg">
+               <span><h3>Larry Birnbaum</h3><h4>&nbsp;</h4></span>
+            </a></li>
+            <li><a href="http://matteasterday.com/"><img src="img/easterday.jpg">
+               <span><h3>Matt Easterday</h3><h4>&nbsp;</h4></span>
+            </a></li>
+            <li><a href="https://egerber.mech.northwestern.edu"><img src="img/gerber.jpg">
+               <span><h3>Liz Gerber</h3><h4>&nbsp;</h4></span>
+            </a></li>
+            <li><a href="http://dgergle.soc.northwestern.edu"><img src="img/gergle.jpg">
+               <span><h3>Darren Gergle</h3><h4>&nbsp;</h4></span>
+            </a></li>
+            <li><a href="http://www.sesp.northwestern.edu/profile/?p=23132&/PaulaHooper/"><img src="img/hooper.jpg">
+               <span><h3>Paula Hooper</h3><h4>&nbsp;</h4></span>
+            </a></li>
+            <li><a href="http://www.sesp.northwestern.edu/profile/?p=1049&/NicholePinkard/"><img src="img/pinkard.jpg">
+               <span><h3>Nichole Pinkard</h3><h4>&nbsp;</h4></span>
+            </a></li>
+            <li><a href="http://ampiper.soc.northwestern.edu"><img src="img/piper.jpg">
+               <span><h3>Anne Marie Piper</h3><h4>&nbsp;</h4></span>
+            </a></li>
+            <li><a href="http://users.eecs.northwestern.edu/~hq/"><img src="img/zhang.jpg">
+               <span><h3>Haoqi Zhang</h3><h4>&nbsp;</h4></span>
+            </a></li>
+         </ul>
+         <br style="clear:both">
+         <br style="clear:both">
+         <h5>Students</h5>
+         <ul class = "profiles">
             <li><a href="http://www.sesp.northwestern.edu/profile/?p=22982&/ConnorBain/"><img src="img/bain.jpg">
-    		<span><h3>Connor Bain</h3><h4>&nbsp;</h4></span>
-    	</a></li>
+               <span><h3>Connor Bain</h3><h4>&nbsp;</h4></span>
+            </a></li>
             <li><a href="http://jamiegorson.com"><img src="img/gorson.jpg">
-    		<span><h3>Jamie Gorson</h3><h4>&nbsp;</h4></span>
-    	</a></li>
+               <span><h3>Jamie Gorson</h3><h4>&nbsp;</h4></span>
+            </a></li>
             <li><a href="http://garretthedman.com"><img src="img/hedman.png">
-    		<span><h3>Garrett Hedman</h3><h4>&nbsp;</h4></span>
-    	</a></li>
-          </ul>
-    	<br style="clear:both">
-    </section>
+               <span><h3>Garrett Hedman</h3><h4>&nbsp;</h4></span>
+            </a></li>
+            <li><a href=""><img src="">
+               <span><h3>Stephanie Jones</h3><h4>&nbsp;</h4></span>
+            </a></li><li><a href=""><img src="">
+               <span><h3>Jacob Kelter </h3><h4>&nbsp;</h4></span>
+            </a></li><li><a href=""><img src="">
+               <span><h3>Nick LaGrassa</h3><h4>&nbsp;</h4></span>
+            </a></li>
+         </ul>
+         <br style="clear:both">
+      </section>
 
-    <!-- Events -->
-    <section id="events" class="container col-md-10" style="background-color: #E4E0EE; padding: 15px; border-radius: 15px;">
-      <h4>Upcoming Events</h4>
+      <!-- Events -->
+      <section id="events" class="container col-md-10" style="background-color: #E4E0EE; padding: 15px; border-radius: 15px;">
+         <h4>Upcoming Events</h4>
+         <div class="row">
+            <ul style="list-style-type: none;">
+               <li>First <em>CS+LS Symposium</em> with renowned scholars from around the world - Northwestern University - April 29-30 (more details to follow)</li>
+            </ul>
+         </div>
+         <br>
+         <h4>Past Events</h4>
+         <div class="row">
+            <ul style="list-style-type: none;">
+               <li><em>Designing for Irrational Curiosity</em> with <a href="https://www.colorado.edu/ics/michael-eisenberg">Mike Eisenberg</a> - Joint CS + LS & CS Colloquium - December 4, 2017</li>
+               <li><em><a href="http://www.bootstrapworld.org">Bootstrap</a>: What it Is, How it Succeeds, and Where it Struggles</em> with <a href="https://cs.brown.edu/~sk/"> Shriram Krishnamurthi</a> - CS + X Colloquium - July 9, 2018</li>
+            </ul>
+         </div>
+      </section>
+
+
+
+      <!-- ADMISSIONS -->
+      <section id="admissions" class="container col-md-10" style="margin-top: 50px; background-color: #eee; padding: 15px; border-radius: 15px;">
+
+         <h3>Admissions</h3>
+
+         <h5>Deadline: December 31</h5>
+
+         <p>Applications for the PhD program are accepted for fall quarter matriculation only.</p>
+
+         <div style="text-align: center; margin-bottom: 20px;">
+            <a class="btn btn-primary" href="https://www.applyweb.com/nugrad/index.ftl" role="button">Apply Online</a>
+         </div>
+
+         <h5>Application Materials</h5>
+
+         <p>
+            All application documents are required to be submitted electronically. We do not accept paper copies of application documents. The following application documents are required:
+         </p>
+
+         <ul>
+            <li>Graduate School online application</li>
+            <li>Resume or CV</li>
+            <li>GRE Scores</li>
+            <li>TOEFL Scores (international applicants only)</li>
+            <li>Statement of Purpose</li>
+            <li>Academic Transcript</li>
+            <li>Two to three letters of recommendation</li>
+            <li>Writing Sample</li>
+            <li>Application fee of $95 submitted online</li>
+         </ul>
+
+         <h5>Writing Sample</h5>
+         <p>
+            The writing sample should be academic in nature and provide evidence of your ability to conduct scholarly inquiry. There is no length limit, but the file size must not exceed 2MB in order to upload. Students typcially submit documents such as research papers, honors theses, and course papers.
+         </p>
+
+         <h5>Academic Transcript</h5>
+         <p>
+            Copies of unofficial transcripts may be submitted during the application process. However, official transcripts are required of all admitted students before the start of the first quarter.
+         </p>
+
+         <p>
+            <a href="http://www.tgs.northwestern.edu/admission/application-requirements/transcripts.html#Transcripts" target="_blank">Find out more about post-secondary official transcripts</a>
+         </p>
+
+         <h5>GRE Scores</h5>
+         <p>
+            GRE scores must be sent directly from ETS and must be no older than five years at time of matriculation.
+         </p>
+
+         <p>
+            <a href="http://www.tgs.northwestern.edu/admission/application-requirements/test-scores.html" target="_blank">More information about GRE scores (send scores via code #1565)</a>
+         </p>
+
+         <h5>Test of English as a Foreign Language (TOEFL)</h5>
+         <p>
+            English proficiency scores are required of all international applicants.
+            If you are have earned a graduate or undergraduate degree from an accredited institution of higher education where the primary language of instruction is English, you are not required to submit a TOEFL score.
+            For the TOEFL, you must score 600 or higher on the paper-based test, 250 or higher on the computer-based test, 100 or higher on the internet based test. For the IELTS, you must receive a score of 7.0 or higher.
+         </p>
+
+         <p>
+            <a href="http://www.tgs.northwestern.edu/admission/application-requirements/test-scores.html#TOEFL__IELTS" target="_blank">Learn more about English proficiency scores for non-native English speakers</a>
+         </p>
+
+         <p>
+            Applicants interested in the PhD program are encouraged to contact program assistant <a href="http://www.sesp.northwestern.edu/profile/?p=19695">Megan Redfearn</a> at any time.
+         </p>
+      </section>
+
+
+      <!-- CONTACT US -->
+      <section id="admissions" class="container col-md-10" style="margin-top: 50px;">
+         <h3>Contact Us</h3>
+         <p>Questions about the program may be directed to the <a href="http://www.sesp.northwestern.edu/profile/?p=19695">program assistant</a>:</p>
+
+         <div style="margin-left: 80px;">
+            Joint PhD Program in Computer Science and Learning Sciences<br>
+            Northwestern University<br>
+            c/o Megan Redfearn , PhD Program Assistant<br>
+            2120 Campus Drive<br>
+            Evanston, IL 60208<br><br>
+
+            <a href="mailto:m-redfearn@northwestern.edu">m-redfearn@northwestern.edu</a><br>
+            <a href="tel:847-467-6519">847-467-6519</a><br>
+         </div>
+      </section>
+
+
+   </main>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <footer class="footer-bs">
       <div class="row">
-          <ul style="list-style-type: none;">
-            <li>Stay tuned for 2018 - 2019 events!</li>
-          </ul>
-      </div>
-      <br>
-      <h4>Past Events</h4>
-      <div class="row">
-          <ul style="list-style-type: none;">
-            <li><em>Designing for Irrational Curiosity</em> with <a href="https://www.colorado.edu/ics/michael-eisenberg">Mike Eisenberg</a> - Joint CS + LS & CS Colloquium - December 4, 2017</li>
-            <li><em><a href="http://www.bootstrapworld.org">Bootstrap</a>: What it Is, How it Succeeds, and Where it Struggles</em> with <a href="https://cs.brown.edu/~sk/"> Shriram Krishnamurthi</a> - CS + X Colloquium - July 9, 2018</li>
-          </ul>
-      </div>
-   </section>
+         <div class="col-md-3 footer-brand animated fadeInLeft">
+            <a href="http://www.northwestern.edu/" target="_blank"><img alt="Northwestern University" height="61" src="img/nu-logo-footer.svg" width="193"></a>
+            <br>
+            © 2017 Northwestern University
+         </div>
 
-
-
-    <!-- ADMISSIONS -->
-    <section id="admissions" class="container col-md-10" style="margin-top: 50px; background-color: #eee; padding: 15px; border-radius: 15px;">
-
-      <h3>Admissions</h3>
-
-      <h5>Deadline: December 31</h5>
-
-      <p>Applications for the PhD program are accepted for fall quarter matriculation only.</p>
-
-      <div style="text-align: center; margin-bottom: 20px;">
-        <a class="btn btn-primary" href="https://www.applyweb.com/nugrad/index.ftl" role="button">Apply Online</a>
-      </div>
-
-      <h5>Application Materials</h5>
-
-      <p>
-        All application documents are required to be submitted electronically. We do not accept paper copies of application documents. The following application documents are required:
-      </p>
-
-      <ul>
-        <li>Graduate School online application</li>
-        <li>Resume or CV</li>
-        <li>GRE Scores</li>
-        <li>TOEFL Scores (international applicants only)</li>
-        <li>Statement of Purpose</li>
-        <li>Academic Transcript</li>
-        <li>Two to three letters of recommendation</li>
-        <li>Writing Sample</li>
-        <li>Application fee of $95 submitted online</li>
-      </ul>
-
-      <h5>Writing Sample</h5>
-      <p>
-        The writing sample should be academic in nature and provide evidence of your ability to conduct scholarly inquiry. There is no length limit, but the file size must not exceed 2MB in order to upload. Students typcially submit documents such as research papers, honors theses, and course papers.
-      </p>
-
-      <h5>Academic Transcript</h5>
-      <p>
-        Copies of unofficial transcripts may be submitted during the application process. However, official transcripts are required of all admitted students before the start of the first quarter.
-      </p>
-
-      <p>
-        <a href="http://www.tgs.northwestern.edu/admission/application-requirements/transcripts.html#Transcripts" target="_blank">Find out more about post-secondary official transcripts</a>
-      </p>
-
-      <h5>GRE Scores</h5>
-      <p>
-        GRE scores must be sent directly from ETS and must be no older than five years at time of matriculation.
-      </p>
-
-      <p>
-        <a href="http://www.tgs.northwestern.edu/admission/application-requirements/test-scores.html" target="_blank">More information about GRE scores (send scores via code #1565)</a>
-      </p>
-
-      <h5>Test of English as a Foreign Language (TOEFL)</h5>
-      <p>
-        English proficiency scores are required of all international applicants.
-        If you are have earned a graduate or undergraduate degree from an accredited institution of higher education where the primary language of instruction is English, you are not required to submit a TOEFL score.
-        For the TOEFL, you must score 600 or higher on the paper-based test, 250 or higher on the computer-based test, 100 or higher on the internet based test. For the IELTS, you must receive a score of 7.0 or higher.
-      </p>
-
-      <p>
-        <a href="http://www.tgs.northwestern.edu/admission/application-requirements/test-scores.html#TOEFL__IELTS" target="_blank">Learn more about English proficiency scores for non-native English speakers</a>
-      </p>
-
-      <p>
-        Applicants interested in the PhD program are encouraged to contact program assistant <a href="http://www.sesp.northwestern.edu/profile/?p=19695">Megan Redfearn</a> at any time.
-      </p>
-    </section>
-
-
-    <!-- CONTACT US -->
-    <section id="admissions" class="container col-md-10" style="margin-top: 50px;">
-      <h3>Contact Us</h3>
-      <p>Questions about the program may be directed to the <a href="http://www.sesp.northwestern.edu/profile/?p=19695">program assistant</a>:</p>
-
-      <div style="margin-left: 80px;">
-        Joint PhD Program in Computer Science and Learning Sciences<br>
-        Northwestern University<br>
-        c/o Megan Redfearn , PhD Program Assistant<br>
-        2120 Campus Drive<br>
-        Evanston, IL 60208<br><br>
-
-        <a href="mailto:m-redfearn@northwestern.edu">m-redfearn@northwestern.edu</a><br>
-        <a href="tel:847-467-6519">847-467-6519</a><br>
-      </div>
-    </section>
-
-
-  </main>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <footer class="footer-bs">
-        <div class="row">
-        	<div class="col-md-3 footer-brand animated fadeInLeft">
-            	<a href="http://www.northwestern.edu/" target="_blank"><img alt="Northwestern University" height="61" src="img/nu-logo-footer.svg" width="193"></a>
-                <br>
-                © 2017 Northwestern University
-            </div>
-
-        	<div class="col-md-5 footer-nav animated fadeInUp">
-                    <ul class="list">
-                       <li><a href="http://www.mccormick.northwestern.edu/eecs/">Department of Electrical Engineering and Computer Science</a></li>
-                       <li><a href="http://www.mccormick.northwestern.edu">McCormick School of Engineering and Applied Science</a></li>
-                       <li><a href="https://www.sesp.northwestern.edu/learning-sciences/">Learning Sciences Department</a></li>
-                       <li><a href="https://www.sesp.northwestern.edu/">School of Education and Social Policy</a></li>
-                    </ul>
-            </div>
+         <div class="col-md-5 footer-nav animated fadeInUp">
+            <ul class="list">
+               <li><a href="http://www.mccormick.northwestern.edu/eecs/">Department of Electrical Engineering and Computer Science</a></li>
+               <li><a href="http://www.mccormick.northwestern.edu">McCormick School of Engineering and Applied Science</a></li>
+               <li><a href="https://www.sesp.northwestern.edu/learning-sciences/">Learning Sciences Department</a></li>
+               <li><a href="https://www.sesp.northwestern.edu/">School of Education and Social Policy</a></li>
+            </ul>
+         </div>
          <!--
-        	<div class="col-md-2 footer-social animated fadeInDown">
+         <div class="col-md-2 footer-social animated fadeInDown">
          Template code saved for later...
-            	<h4>Follow Us</h4>
-            	<ul>
-                	<li><a href="#">Facebook</a></li>
-                	<li><a href="#">Twitter</a></li>
-                	<li><a href="#">Instagram</a></li>
-                	<li><a href="#">RSS</a></li>
-                </ul>
-            </div>
-        	<div class="col-md-3 footer-ns animated fadeInRight">
-            	<h4>Newsletter</h4>
-                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
-                <p>
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search for...">
-                      <span class="input-group-btn">
-                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
-                      </span>
-                    </div>
-                 </p>
-            </div>
-         -->
-        </div>
-    </footer>
+         <h4>Follow Us</h4>
+         <ul>
+         <li><a href="#">Facebook</a></li>
+         <li><a href="#">Twitter</a></li>
+         <li><a href="#">Instagram</a></li>
+         <li><a href="#">RSS</a></li>
+      </ul>
+   </div>
+   <div class="col-md-3 footer-ns animated fadeInRight">
+   <h4>Newsletter</h4>
+   <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+   <p>
+   <div class="input-group">
+   <input type="text" class="form-control" placeholder="Search for...">
+   <span class="input-group-btn">
+   <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+</span>
+</div>
+</p>
+</div>
+-->
+</div>
+</footer>
 </body>
 </html>
